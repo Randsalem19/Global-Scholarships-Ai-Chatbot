@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', 'Inter', sans-serif;
+  background-color: #F8FAFC;
+  color: #1E293B;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* --- Sidebar (الهوية الخضراء الداكنة الفخمة) --- */
+.sidebar {
+  width: 280px;
+  background-color: #064E3B; /* أخضر داكن فخم جداً */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  box-shadow: 4px 0 15px rgba(0,0,0,0.05);
+  z-index: 10;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.logo-icon {
+  font-size: 28px;
+  background: #10B981; /* أخضر زاهي لـ "فرص خضراء" */
+  border-radius: 12px;
+  padding: 8px;
+  line-height: 1;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+}
+
+.logo-area h2 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.logo-area p {
+  font-size: 13px;
+  color: #A7F3D0; /* أخضر فاتح جداً */
+}
+
+.menu-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6EE7B7;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.menu-btn {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #D1FAE5;
+  text-align: left;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 8px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-btn:hover, .menu-btn.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+/* --- Footer الروابط والتواصل --- */
+.sidebar-footer {
+  margin-top: auto;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.social-links a {
+  color: #A7F3D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: white;
+  background: #10B981; 
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.copyright {
+  font-size: 11.5px;
+  color: #D1FAE5;
+  margin-bottom: 6px;
+}
+
+.powered-by {
+  font-size: 10.5px;
+  color: #6EE7B7;
+}
+
+/* --- Main Chat Area --- */
+.chat-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #F8FAFC;
+}
+
+.chat-header {
+  background: white;
+  padding: 20px 40px;
+  border-bottom: 1px solid #E2E8F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.header-info h1 {
+  font-size: 22px;
+  color: #064E3B; /* لون فخم للعنوان */
+  font-weight: 700;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #10B981;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10B981;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+.chat-box {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  scroll-behavior: smooth;
+}
+
+.message {
+  display: flex;
+  gap: 16px;
+  max-width: 85%;
+}
+
+.bot-message {
+  align-self: flex-start;
+}
+
+.user-message {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #064E3B;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.user-message .avatar {
+  background: #10B981;
+}
+
+.bubble {
+  padding: 18px 24px;
+  border-radius: 18px;
+  font-size: 15.5px;
+  line-height: 1.7;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.bot-message .bubble {
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-top-left-radius: 4px;
+  color: #334155;
+}
+
+.bot-message .bubble ul {
+  margin-top: 12px;
+  padding-inline-start: 24px;
+}
+
+.bot-message .bubble li {
+  margin-bottom: 8px;
+}
+
+.bot-message .bubble strong {
+  color: #064E3B;
+}
+
+.user-message .bubble {
+  background: #059669; /* أخضر مريح لرسالة المستخدم */
+  color: white;
+  border-top-right-radius: 4px;
+}
+
+/* --- Input Area --- */
+.chat-input-container {
+  padding: 20px 40px 40px;
+  background: transparent;
+}
+
+.chat-form {
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  padding: 10px 16px;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E2E8F0;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.chat-form:focus-within {
+  border-color: #10B981;
+  box-shadow: 0 10px 30px -5px rgba(16, 185, 129, 0.15);
+}
+
+.chat-form input {
+  flex: 1;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  outline: none;
+  font-family: inherit;
+  background: transparent;
+  color: #1E293B;
+}
+
+.chat-form input::placeholder {
+  color: #94A3B8;
+}
+
+.chat-form button {
+  background: #10B981;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chat-form button:hover {
+  background: #059669;
+  transform: scale(1.05);
+}
+
+/* Loading Animation */
+.typing-indicator {
+  display: flex;
+  gap: 5px;
+  padding: 12px 0;
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  background: #10B981;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+.typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}

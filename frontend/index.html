@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScholarAI - Premium Global Scholarships Advisor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-area">
+        <div class="logo-icon">🎓</div>
+        <div>
+          <h2>ScholarAI</h2>
+          <p>Global Advisor</p>
+        </div>
+      </div>
+      
+      <div class="sidebar-menu">
+        <p class="menu-label">Smart Services</p>
+        <button class="menu-btn active">💬 AI Chat Consultant</button>
+        <button class="menu-btn" data-prompt="أريد عمل تقييم لملفي الأكاديمي (Profile Evaluation) لمعرفة المنح التي تناسبني. ما هي المعلومات التي تحتاجها مني للبدء؟">📊 Profile Evaluation</button>
+        <button class="menu-btn" data-prompt="أبحث عن جامعات تناسب تخصصي (University Matches). هل يمكنك اقتراح أفضل الجامعات التي تقدم منحاً ممولة بالكامل؟">🌍 University Matches</button>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="social-links">
+          <a href="https://foraskhadra.com/" target="_blank" title="الموقع الرسمي">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </a>
+          <a href="https://www.facebook.com/foraskhadra" target="_blank" title="فيسبوك">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="https://www.instagram.com/foraskhadra" target="_blank" title="انستغرام">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://t.me/foraskhadra" target="_blank" title="تليجرام">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </a>
+        </div>
+        <p class="copyright">© 2026 فرص خضراء. جميع الحقوق محفوظة.</p>
+        <p class="powered-by">AI Task Developed with ❤️</p>
+      </div>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="chat-main">
+      <header class="chat-header">
+        <div class="header-info">
+          <h1>المستشار الذكي للمنح العالمية</h1>
+          <span class="status-badge"><span class="dot"></span> Online</span>
+        </div>
+      </header>
+
+      <div id="chatBox" class="chat-box">
+        <!-- Initial Bot Message -->
+        <div class="message bot-message" dir="auto">
+          <div class="avatar">🎓</div>
+          <div class="bubble">
+            أهلاً بك! 👋 أنا <strong>المستشار الذكي</strong> الخاص بك. <br><br>
+            كيف يمكنني مساعدتك اليوم؟ يمكنك سؤالي عن:
+            <ul>
+              <li>منح الماجستير أو الدكتوراه في أوروبا (Master/PhD in Europe).</li>
+              <li>المنح الممولة بالكامل للطلاب العرب.</li>
+              <li>شروط وتفاصيل منحة معينة مثل Chevening أو DAAD أو Fulbright.</li>
+            </ul>
+            اكتب سؤالك باللغة العربية أو الإنجليزية لنبدأ!
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input-container">
+        <form id="chatForm" class="chat-form">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="اكتب استفسارك هنا... / Type your question here..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="sendBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

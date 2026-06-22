@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Fulbright Foreign Student Program",
+    "country": "United States",
+    "degree_level": ["Master's", "PhD"],
+    "majors": ["Arts", "Sciences", "Engineering", "Social Sciences", "Business", "Law", "Public Policy"],
+    "funding": "Full Funding",
+    "deadline": "February 2025",
+    "description": "The Fulbright Program is the U.S. government's flagship international exchange program. It offers grants for graduate students, young professionals, and artists from abroad to study and conduct research in the United States. Covers tuition, living stipend, health insurance, and travel."
+  },
+  {
+    "id": 2,
+    "name": "Chevening Scholarships",
+    "country": "United Kingdom",
+    "degree_level": ["Master's"],
+    "majors": ["Any field of study"],
+    "funding": "Full Funding",
+    "deadline": "November 2024",
+    "description": "Chevening is the UK government's international awards programme, funded by the Foreign, Commonwealth & Development Office. It offers full financial support for outstanding emerging leaders to pursue a one-year master's degree at any UK university. Covers tuition, living allowance, travel, and visa costs."
+  },
+  {
+    "id": 3,
+    "name": "DAAD Scholarships",
+    "country": "Germany",
+    "degree_level": ["Master's", "PhD", "Bachelor's"],
+    "majors": ["Engineering", "Sciences", "Arts", "Humanities", "Social Sciences", "Medicine", "Law"],
+    "funding": "Full Funding",
+    "deadline": "October 2024",
+    "description": "The German Academic Exchange Service (DAAD) offers a wide range of scholarships for international students wishing to study or conduct research in Germany. Programs cover undergraduate, postgraduate, and doctoral levels. Includes monthly stipend, travel allowance, and health insurance."
+  },
+  {
+    "id": 4,
+    "name": "Erasmus Mundus Joint Masters",
+    "country": "European Union",
+    "degree_level": ["Master's"],
+    "majors": ["Any field of study"],
+    "funding": "Full Funding",
+    "deadline": "Varies by program",
+    "description": "Erasmus Mundus is a prestigious programme of the European Union that supports world-class joint master's degrees delivered by international consortia of higher education institutions. It provides full scholarships including a contribution to travel, installation and any other costs, plus a monthly allowance."
+  },
+  {
+    "id": 5,
+    "name": "Australia Awards Scholarships",
+    "country": "Australia",
+    "degree_level": ["Master's", "PhD", "Bachelor's"],
+    "majors": ["Agriculture", "Education", "Engineering", "Public Health", "Business", "Environment", "Governance"],
+    "funding": "Full Funding",
+    "deadline": "April 2025",
+    "description": "Australia Awards are prestigious, transformational scholarships and short courses offered to the next generation of global leaders for development. Funded by the Australian Government, they support individuals from developing countries. Covers tuition, travel, establishment allowance, and living stipend."
+  },
+  {
+    "id": 6,
+    "name": "Japanese Government (MEXT) Scholarship",
+    "country": "Japan",
+    "degree_level": ["Bachelor's", "Master's", "PhD"],
+    "majors": ["Sciences", "Engineering", "Agriculture", "Medicine", "Education", "Social Sciences", "Humanities", "Arts"],
+    "funding": "Full Funding",
+    "deadline": "May 2025",
+    "description": "The Japanese Government (Monbukagakusho) Scholarship is provided by the Ministry of Education, Culture, Sports, Science and Technology (MEXT). It covers research students, undergraduate, specialized training college students, and teacher training students. Provides monthly stipend, tuition, and airfare."
+  },
+  {
+    "id": 7,
+    "name": "Korean Government Scholarship Program (KGSP)",
+    "country": "South Korea",
+    "degree_level": ["Bachelor's", "Master's", "PhD"],
+    "majors": ["Any field of study"],
+    "funding": "Full Funding",
+    "deadline": "September 2024",
+    "description": "The Korean Government Scholarship Program (KGSP), also known as GKS, is funded by the Korean government to promote international exchange and mutual friendship. Recipients receive a monthly allowance, settlement allowance, language training, tuition, medical insurance, and round-trip airfare."
+  },
+  {
+    "id": 8,
+    "name": "Chinese Government Scholarship (CSC)",
+    "country": "China",
+    "degree_level": ["Bachelor's", "Master's", "PhD"],
+    "majors": ["Sciences", "Engineering", "Agriculture", "Medicine", "Education", "Economics", "Law", "Management", "History", "Philosophy", "Literature", "Arts"],
+    "funding": "Full Funding",
+    "deadline": "March 2025",
+    "description": "The Chinese Government Scholarship Program is established by the Ministry of Education of China to fund international students to study in China. It covers tuition fees, accommodation, stipend, and comprehensive medical insurance. Programs are available in both Chinese and English."
+  },
+  {
+    "id": 9,
+    "name": "Swiss Government Excellence Scholarships",
+    "country": "Switzerland",
+    "degree_level": ["Master's", "PhD", "Postdoctoral"],
+    "majors": ["Sciences", "Engineering", "Arts", "Humanities", "Social Sciences", "Medicine"],
+    "funding": "Full Funding",
+    "deadline": "November 2024",
+    "description": "The Swiss Government Excellence Scholarships are aimed at young foreign researchers and artists who have completed a master's degree or PhD. Provides monthly scholarship, exemption from tuition fees, health insurance, accommodation allowance, and flights."
+  },
+  {
+    "id": 10,
+    "name": "New Zealand Excellence Awards",
+    "country": "New Zealand",
+    "degree_level": ["Master's", "PhD"],
+    "majors": ["Agriculture", "Environment", "Business", "Technology", "Education", "Public Health"],
+    "funding": "Partial Funding",
+    "deadline": "March 2025",
+    "description": "The New Zealand Excellence Awards are offered by New Zealand universities in conjunction with Education New Zealand. They provide partial funding to outstanding international students, including tuition fee reductions and may include living cost allowances for high-achieving candidates."
+  },
+  {
+    "id": 11,
+    "name": "Turkish Government Scholarship (Türkiye Bursları)",
+    "country": "Turkey",
+    "degree_level": ["Bachelor's", "Master's", "PhD"],
+    "majors": ["Any field of study"],
+    "funding": "Full Funding",
+    "deadline": "February 2025",
+    "description": "Türkiye Bursları is a state-funded, highly competitive scholarship program awarded by the Presidency for Turks Abroad and Related Communities. It includes monthly stipend, accommodation, health insurance, language course, round-trip airfare, and university placement."
+  },
+  {
+    "id": 12,
+    "name": "Aga Khan Foundation International Scholarship",
+    "country": "Multiple (UK, Canada, USA, Europe, others)",
+    "degree_level": ["Master's"],
+    "majors": ["Any field of study"],
+    "funding": "Full Funding (50% grant, 50% loan)",
+    "deadline": "March 2025",
+    "description": "The Aga Khan Foundation provides a limited number of scholarships each year for postgraduate studies to outstanding students from developing countries who have no other means of financing their studies. Awards are given as a half-grant, half-loan and cover tuition and living expenses."
+  },
+  {
+    "id": 13,
+    "name": "Canada Vanier Graduate Scholarships",
+    "country": "Canada",
+    "degree_level": ["PhD"],
+    "majors": ["Health Sciences", "Natural Sciences", "Engineering", "Social Sciences", "Humanities"],
+    "funding": "Full Funding",
+    "deadline": "November 2024",
+    "description": "The Vanier Canada Graduate Scholarships program strengthens Canada's ability to attract and retain world-class doctoral students. It is open to both Canadian and international students. Valued at $50,000 per year for three years, it supports students at a Canadian university pursuing their doctoral degree."
+  },
+  {
+    "id": 14,
+    "name": "Gates Cambridge Scholarship",
+    "country": "United Kingdom",
+    "degree_level": ["Master's", "PhD"],
+    "majors": ["Any field of study"],
+    "funding": "Full Funding",
+    "deadline": "October 2024",
+    "description": "Gates Cambridge Scholarships are awarded to outstanding applicants from countries outside the UK to pursue a full-time postgraduate degree in any subject available at the University of Cambridge. The scholarship covers university fees, maintenance allowance, airfare, and additional allowances."
+  },
+  {
+    "id": 15,
+    "name": "Rhodes Scholarship",
+    "country": "United Kingdom",
+    "degree_level": ["Master's", "PhD"],
+    "majors": ["Any field of study"],
+    "funding": "Full Funding",
+    "deadline": "October 2024",
+    "description": "The Rhodes Scholarship is the oldest and arguably most prestigious international scholarship programme in the world. It enables outstanding young people from around the world to study at the University of Oxford. Covers university fees, stipend, travel, visa costs, and health insurance."
+  },
+  {
+    "id": 16,
+    "name": "Orange Knowledge Programme (OKP)",
+    "country": "Netherlands",
+    "degree_level": ["Master's", "Short Courses"],
+    "majors": ["Agriculture", "Water Management", "Food Security", "Health", "Education", "Governance", "Security"],
+    "funding": "Full Funding",
+    "deadline": "February 2025",
+    "description": "The Orange Knowledge Programme (OKP) funds mid-career professionals from selected countries to pursue master's degrees and short courses at Dutch universities. It contributes to sustainable and inclusive development. Covers tuition, visa, living allowance, travel, and insurance."
+  },
+  {
+    "id": 17,
+    "name": "OPEC Fund Scholarship",
+    "country": "Multiple",
+    "degree_level": ["Master's"],
+    "majors": ["Economics", "Finance", "Business", "Development Studies", "Energy", "Engineering", "Environment"],
+    "funding": "Partial Funding",
+    "deadline": "April 2025",
+    "description": "The OPEC Fund for International Development offers scholarships to students from developing member countries pursuing postgraduate studies. The scholarship supports students in fields related to development, economics, finance, and energy. Provides a stipend toward study and living expenses."
+  },
+  {
+    "id": 18,
+    "name": "Islamic Development Bank (IsDB) Scholarship",
+    "country": "Multiple",
+    "degree_level": ["Bachelor's", "Master's", "PhD"],
+    "majors": ["Sciences", "Technology", "Engineering", "Mathematics", "Medicine", "Agriculture"],
+    "funding": "Full Funding",
+    "deadline": "March 2025",
+    "description": "The IsDB Merit Scholarship Programme for High Technology is open to students from IsDB Member Countries in subjects related to Science, Technology, Engineering, and Math (STEM). Provides full sponsorship including tuition, living allowance, accommodation, travel, and insurance."
+  }
+]

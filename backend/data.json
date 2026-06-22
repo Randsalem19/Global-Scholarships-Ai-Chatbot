@@ -1,0 +1,306 @@
+[
+  {
+    "name": "Global Excellence Scholarship",
+    "country": "United Kingdom",
+    "degree_level": "Bachelor",
+    "majors": [
+      "Computer Science",
+      "Business",
+      "Engineering"
+    ],
+    "description": "A merit-based scholarship for international undergraduate students with strong academic records."
+  },
+  {
+    "name": "DAAD International Scholarship",
+    "country": "Germany",
+    "degree_level": "Master",
+    "majors": [
+      "Engineering",
+      "Data Science",
+      "Public Policy"
+    ],
+    "description": "Supports international students who want to pursue postgraduate studies in Germany."
+  },
+  {
+    "name": "Turkey Success Scholarship",
+    "country": "Turkey",
+    "degree_level": "Bachelor, Master, PhD",
+    "majors": [
+      "Medicine",
+      "Engineering",
+      "Social Sciences"
+    ],
+    "description": "A scholarship for outstanding international students seeking study opportunities in Turkey."
+  },
+  {
+    "name": "Canada Future Leaders Grant",
+    "country": "Canada",
+    "degree_level": "Master",
+    "majors": [
+      "AI",
+      "Cybersecurity",
+      "Business Analytics"
+    ],
+    "description": "Designed for students interested in technology, leadership, and innovation."
+  },
+  {
+    "name": "Asian Development Scholarship",
+    "country": "Japan",
+    "degree_level": "Master",
+    "majors": [
+      "Economics",
+      "Development Studies",
+      "Management"
+    ],
+    "description": "Supports students from developing countries to study development-related programs."
+  },
+  {
+    "name": "Fulbright Foreign Student Program",
+    "country": "United States",
+    "degree_level": "Master, PhD",
+    "majors": [
+      "Arts",
+      "Sciences",
+      "Engineering",
+      "Law",
+      "Public Health"
+    ],
+    "description": "Fully funded flagship international exchange program by the U.S. government for the 2026-2027 academic year."
+  },
+  {
+    "name": "Chevening Scholarships",
+    "country": "United Kingdom",
+    "degree_level": "Master",
+    "majors": [
+      "International Relations",
+      "Media",
+      "Law",
+      "Economics"
+    ],
+    "description": "UK government's global scholarship program offering fully-funded one-year Master's degrees for emerging leaders in 2026."
+  },
+  {
+    "name": "MEXT Scholarship",
+    "country": "Japan",
+    "degree_level": "Bachelor, Master, PhD",
+    "majors": [
+      "Natural Sciences",
+      "Engineering",
+      "Social Sciences",
+      "Humanities"
+    ],
+    "description": "The Japanese Government offers full tuition coverage, a monthly allowance, and round-trip flights for international students."
+  },
+  {
+    "name": "Eiffel Excellence Scholarship Program",
+    "country": "France",
+    "degree_level": "Master, PhD",
+    "majors": [
+      "Law",
+      "Economics",
+      "Engineering",
+      "Political Sciences"
+    ],
+    "description": "Developed by the Ministry for Europe and Foreign Affairs to attract top international profiles to French institutions."
+  },
+  {
+    "name": "Australia Awards Scholarships",
+    "country": "Australia",
+    "degree_level": "Bachelor, Master, PhD",
+    "majors": [
+      "Agriculture",
+      "Education",
+      "Public Health",
+      "Environmental Science"
+    ],
+    "description": "Long-term development awards administered by the Australian Government for students from partner developing countries."
+  },
+  {
+    "name": "Global Korea Scholarship (GKS)",
+    "country": "South Korea",
+    "degree_level": "Bachelor, Master, PhD",
+    "majors": [
+      "STEM",
+      "Korean Language",
+      "Business",
+      "Arts"
+    ],
+    "description": "Provides international students with full funding, including tuition, flights, and Korean language training for 2026."
+  },
+  {
+    "name": "Swiss Government Excellence Scholarships",
+    "country": "Switzerland",
+    "degree_level": "PhD, Postdoctoral",
+    "majors": [
+      "Scientific Research",
+      "All academic disciplines"
+    ],
+    "description": "Targeted at highly qualified young foreign researchers, facilitating research at prestigious Swiss universities."
+  },
+  {
+    "name": "Gates Cambridge Scholarship",
+    "country": "United Kingdom",
+    "degree_level": "Master, PhD",
+    "majors": [
+      "Any field available at Cambridge"
+    ],
+    "description": "Offers fully funded opportunities to outstanding applicants from outside the UK to pursue postgraduate degrees at Cambridge."
+  },
+  {
+    "name": "Rhodes Scholarship",
+    "country": "United Kingdom",
+    "degree_level": "Master, PhD",
+    "majors": [
+      "Any field available at Oxford"
+    ],
+    "description": "One of the most elite global scholarships supporting exceptional young leaders to undertake postgraduate study at Oxford."
+  },
+  {
+    "name": "Erasmus Mundus Joint Masters",
+    "country": "European Union",
+    "degree_level": "Master",
+    "majors": [
+      "Interdisciplinary programs",
+      "Technology",
+      "Humanities",
+      "Sciences"
+    ],
+    "description": "An integrated study program delivered by an international consortium of EU universities with full funding and travel allowances."
+  },
+  {
+    "name": "Chinese Government Scholarship (CSC)",
+    "country": "China",
+    "degree_level": "Bachelor, Master, PhD",
+    "majors": [
+      "Engineering",
+      "Medicine",
+      "Agriculture",
+      "International Law"
+    ],
+    "description": "Covers full tuition fees, free on-campus accommodation, medical insurance, and a monthly stipend for 2026/2027."
+  },
+  {
+    "name": "Swedish Institute Scholarships",
+    "country": "Sweden",
+    "degree_level": "Master",
+    "majors": [
+      "Sustainable Development",
+      "Innovation",
+      "Engineering",
+      "Social Sciences"
+    ],
+    "description": "Aimed at global professionals. Covers full tuition, living expenses, and a travel grant to study in Sweden."
+  },
+  {
+    "name": "Knight-Hennessy Scholars",
+    "country": "United States",
+    "degree_level": "Master, PhD",
+    "majors": [
+      "Business",
+      "Law",
+      "Medicine",
+      "Education",
+      "Humanities"
+    ],
+    "description": "Fully funds up to three years of graduate education at Stanford University for multidisciplinary, multicultural future leaders."
+  },
+  {
+    "name": "UNICAF Scholarships for Online Degrees at UK Universities",
+    "country": "Various/Check Site",
+    "degree_level": "Master",
+    "majors": [
+      "Any field"
+    ],
+    "description": "UNICAF Scholarships for Online Degrees at UK Universities\nDo you want to pursue an internationally recognized Bachelor, Master’s, PHD Degrees offered by universities in the UK, but at a fraction of th..."
+  },
+  {
+    "name": "DAAD Scholarships in Germany for Development-Related Postgraduate Courses",
+    "country": "Various/Check Site",
+    "degree_level": "Master",
+    "majors": [
+      "Any field"
+    ],
+    "description": "DAAD Scholarships in Germany for Development-Related Postgraduate Courses\n DAAD\nMasters/PhD Degree  Deadline: Aug-Oct 2026 (annual)\nStudy in:  Germany\nNext course starts AY 2027/2028..."
+  },
+  {
+    "name": "Rhodes Scholarships at Oxford University for International Students",
+    "country": "Various/Check Site",
+    "degree_level": "Master",
+    "majors": [
+      "Any field"
+    ],
+    "description": "Rhodes Scholarships at Oxford University for International Students\nRhodes Scholarship Fund\nMasters/PhD Degree   Deadline: varies, July-Oct 2026 (annual)\nStudy in: UK\nCourse starts October 2026..."
+  },
+  {
+    "name": "University of Sydney International Stipend Scholarship (USYDIS)",
+    "country": "Various/Check Site",
+    "degree_level": "Master",
+    "majors": [
+      "Any field"
+    ],
+    "description": "University of Sydney International Stipend Scholarship (USYDIS)\nUniversity of Sydney \nMasters/PhD Degree   Deadline: 11 Sept/18 Dec 2026\nStudy in:  Australia\nCourse starts 2027..."
+  },
+  {
+    "name": "Fulbright Foreign Student Program in USA",
+    "country": "Various/Check Site",
+    "degree_level": "Master",
+    "majors": [
+      "Any field"
+    ],
+    "description": "Fulbright Foreign Student Program in USA\nUSA Government\nMasters/PhD Degrees    Deadline: varies, Feb-Oct 2026\nStudy in:  USA\nCourse starts AY 2027-2028..."
+  },
+  {
+    "name": "DAAD Helmut-Schmidt Masters Scholarships for Public Policy and Good Governance",
+    "country": "Various/Check Site",
+    "degree_level": "Master",
+    "majors": [
+      "Any field"
+    ],
+    "description": "DAAD Helmut-Schmidt Masters Scholarships for Public Policy and Good Governance\nDAAD\nMasters Degree  Deadline: 31 July 2026 (annual)\nStudy in:  Germany\nNext course starts Sept/Oct 2027..."
+  },
+  {
+    "name": "GREAT Scholarships in UK for International Students",
+    "country": "Various/Check Site",
+    "degree_level": "Master",
+    "majors": [
+      "Any field"
+    ],
+    "description": "GREAT Scholarships in UK for International Students\nUK Government/British Council\nMasters Degree   Deadline: varies, Apr-June 2026 (Annual)\nStudy in:  UK\nCourse starts Sept 2026..."
+  },
+  {
+    "name": "SIDS Scholarships in Water and Sustainable Development at IHE Delft",
+    "country": "Various/Check Site",
+    "degree_level": "Master",
+    "majors": [
+      "Any field"
+    ],
+    "description": "SIDS Scholarships in Water and Sustainable Development at IHE Delft\nIHE Delft\nMasters Degree   Deadline: 1 June 2026 (annual)\nStudy in: Netherlands\nCourse starts September 2026..."
+  },
+  {
+    "name": "Adelaide Global Academic Excellence Scholarships for International Students",
+    "country": "Various/Check Site",
+    "degree_level": "Master",
+    "majors": [
+      "Any field"
+    ],
+    "description": "Adelaide Global Academic Excellence Scholarships for International Students\nUniversity of Adelaide\nBachelors/Masters Degree   Deadline: 22 May 2026 (annual)\nStudy in: Australia\nNext course starts 2026..."
+  },
+  {
+    "name": "ASBS Global Impact Scholarship",
+    "country": "Various/Check Site",
+    "degree_level": "Master",
+    "majors": [
+      "Any field"
+    ],
+    "description": "ASBS Global Impact Scholarship\nGlasgow University\nMasters Degree   Deadline: 23 Feb/18 May 2026 (annual)\nStudy in: UK\nCourse starts Sept 2026..."
+  },
+  {
+    "name": "University of New South Wales International Scholarships",
+    "country": "Various/Check Site",
+    "degree_level": "Master",
+    "majors": [
+      "Any field"
+    ],
+    "description": "University of New South Wales International Scholarships\nUniversity of New South Wales\nBachelors/Masters Degree   Deadline: 18 June 2026 (Annual)\nStudy in: Australia\nCourse starts Term 3, 2026..."
+  }
+]
