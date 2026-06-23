@@ -1,341 +1,146 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Cairo', 'Inter', sans-serif;
-  background-color: #F8FAFC;
-  color: #1E293B;
+  font-family: 'Cairo', sans-serif;
   height: 100vh;
   overflow: hidden;
+  /* صورة الخلفية */
+  background: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;
 }
 
-.app-layout {
-  display: flex;
-  height: 100vh;
+/* طبقة متدرجة شفافة داكنة فوق الصورة */
+.bg-overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(2, 44, 34, 0.85) 0%, rgba(15, 23, 42, 0.9) 100%);
+  z-index: 1;
 }
 
-/* --- Sidebar (الهوية الخضراء الداكنة الفخمة) --- */
+.app-layout { position: relative; z-index: 2; display: flex; height: 100vh; }
+
+/* =========================================
+   الشريط الجانبي (Glass Effect)
+========================================= */
 .sidebar {
   width: 280px;
-  background-color: #064E3B; /* أخضر داكن فخم جداً */
+  background: rgba(15, 23, 42, 0.3); /* شفافية داكنة */
+  backdrop-filter: blur(20px); /* تأثير الزجاج المموه */
+  -webkit-backdrop-filter: blur(20px);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 30px 20px;
+  display: flex; flex-direction: column;
   color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 24px 20px;
-  box-shadow: 4px 0 15px rgba(0,0,0,0.05);
-  z-index: 10;
 }
 
-.logo-area {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 40px;
-}
-
+.logo-area { display: flex; align-items: center; gap: 15px; margin-bottom: 40px; }
 .logo-icon {
-  font-size: 28px;
-  background: #10B981; /* أخضر زاهي لـ "فرص خضراء" */
-  border-radius: 12px;
-  padding: 8px;
-  line-height: 1;
-  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+  background: linear-gradient(135deg, #10B981, #059669);
+  width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;
+  border-radius: 14px; font-size: 24px; box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
 }
+.logo-area h2 { font-size: 24px; font-weight: 700; letter-spacing: 0.5px; }
+.logo-area p { font-size: 13px; color: #94A3B8; margin-top: 2px;}
 
-.logo-area h2 {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  color: #ffffff;
-}
-
-.logo-area p {
-  font-size: 13px;
-  color: #A7F3D0; /* أخضر فاتح جداً */
-}
-
-.menu-label {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #6EE7B7;
-  font-weight: 600;
-  margin-bottom: 12px;
-  letter-spacing: 1px;
-}
-
+.menu-label { font-size: 11px; color: #64748B; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 15px; font-weight: 700; }
 .menu-btn {
-  width: 100%;
-  background: transparent;
-  border: none;
-  color: #D1FAE5;
-  text-align: left;
-  padding: 12px 16px;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-bottom: 8px;
-  font-family: inherit;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  width: 100%; display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px; border-radius: 12px; border: none;
+  background: transparent; color: #CBD5E1; font-family: inherit; font-size: 14.5px; font-weight: 600;
+  cursor: pointer; transition: all 0.3s ease; margin-bottom: 8px;
+}
+.menu-btn:hover { background: rgba(255, 255, 255, 0.08); color: white; transform: translateX(4px); }
+.menu-btn.active {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10B981; border-left: 3px solid #10B981; border-radius: 0 12px 12px 0;
 }
 
-.menu-btn:hover, .menu-btn.active {
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  transform: translateX(5px);
-}
-
-/* --- Footer الروابط والتواصل --- */
-.sidebar-footer {
-  margin-top: auto;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 20px;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
+.sidebar-footer { margin-top: auto; text-align: center; }
+.social-links { display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; }
 .social-links a {
-  color: #A7F3D0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: all 0.3s ease;
+  width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, 0.05); border-radius: 50%; color: #94A3B8;
+  transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.05);
 }
-
 .social-links a:hover {
-  color: white;
-  background: #10B981; 
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+  background: #10B981; color: white; border-color: #10B981; transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
 }
+.copyright { font-size: 12px; color: #64748B; margin-bottom: 5px; }
+.powered-by { font-size: 11.5px; color: #94A3B8; }
+.powered-by span { color: #10B981; font-weight: bold; }
 
-.copyright {
-  font-size: 11.5px;
-  color: #D1FAE5;
-  margin-bottom: 6px;
-}
+/* =========================================
+   مساحة المحادثة الرئيسية
+========================================= */
+.chat-main { flex: 1; display: flex; flex-direction: column; position: relative; }
 
-.powered-by {
-  font-size: 10.5px;
-  color: #6EE7B7;
-}
+.chat-header { padding: 35px 50px 15px; display: flex; flex-direction: column; }
+.chat-header h1 { font-family: 'Amiri', serif; font-size: 38px; color: white; text-shadow: 0 4px 10px rgba(0,0,0,0.4); }
+.subtitle { color: #94A3B8; font-size: 16px; margin-top: 8px; display: flex; align-items: center; gap: 8px; }
+.subtitle .status { color: #10B981; font-weight: 700; display: flex; align-items: center; gap: 6px; }
+.status-dot { width: 8px; height: 8px; background: #10B981; border-radius: 50%; box-shadow: 0 0 10px #10B981; animation: pulse 2s infinite; }
 
-/* --- Main Chat Area --- */
-.chat-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: #F8FAFC;
-}
+/* صندوق الرسائل */
+.chat-box { flex: 1; padding: 20px 50px; overflow-y: auto; display: flex; flex-direction: column; gap: 24px; }
+.chat-box::-webkit-scrollbar { width: 6px; }
+.chat-box::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
 
-.chat-header {
-  background: white;
-  padding: 20px 40px;
-  border-bottom: 1px solid #E2E8F0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-}
+.message { display: flex; gap: 16px; max-width: 75%; animation: fadeIn 0.4s ease forwards; }
+@keyframes fadeIn { from{ opacity: 0; transform: translateY(15px); } to{ opacity: 1; transform: translateY(0); } }
 
-.header-info h1 {
-  font-size: 22px;
-  color: #064E3B; /* لون فخم للعنوان */
-  font-weight: 700;
-}
-
-.status-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 13px;
-  color: #10B981;
-  font-weight: 700;
-  margin-top: 4px;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  background-color: #10B981;
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
-  70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
-}
-
-.chat-box {
-  flex: 1;
-  padding: 40px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  scroll-behavior: smooth;
-}
-
-.message {
-  display: flex;
-  gap: 16px;
-  max-width: 85%;
-}
-
-.bot-message {
-  align-self: flex-start;
-}
-
-.user-message {
-  align-self: flex-end;
-  flex-direction: row-reverse;
-}
+.bot-message { align-self: flex-start; }
+.user-message { align-self: flex-end; flex-direction: row-reverse; }
 
 .avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: #064E3B;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 20px; flex-shrink: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+.bot-message .avatar { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); color: white; }
+.user-message .avatar { background: linear-gradient(135deg, #10B981, #059669); color: white; }
 
-.user-message .avatar {
-  background: #10B981;
-}
-
-.bubble {
-  padding: 18px 24px;
-  border-radius: 18px;
-  font-size: 15.5px;
-  line-height: 1.7;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-}
-
+.bubble { padding: 18px 24px; font-size: 15.5px; line-height: 1.8; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
 .bot-message .bubble {
-  background: white;
-  border: 1px solid #E2E8F0;
-  border-top-left-radius: 4px;
-  color: #334155;
+  background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); color: #1E293B;
+  border-radius: 20px 4px 20px 20px; /* انحناء ذكي للغة العربية */
 }
-
-.bot-message .bubble ul {
-  margin-top: 12px;
-  padding-inline-start: 24px;
-}
-
-.bot-message .bubble li {
-  margin-bottom: 8px;
-}
-
-.bot-message .bubble strong {
-  color: #064E3B;
-}
-
 .user-message .bubble {
-  background: #059669; /* أخضر مريح لرسالة المستخدم */
-  color: white;
-  border-top-right-radius: 4px;
+  background: linear-gradient(135deg, #10B981, #059669); color: white;
+  border-radius: 4px 20px 20px 20px;
 }
+.bot-message .bubble a { color: #059669; font-weight: 700; text-decoration: none; border-bottom: 1px solid #059669; transition: 0.3s; }
+.bot-message .bubble a:hover { color: #10B981; border-color: #10B981; }
+.bot-message .bubble ul { margin-top: 12px; padding-inline-start: 24px; }
+.bot-message .bubble li { margin-bottom: 8px; }
 
-/* --- Input Area --- */
-.chat-input-container {
-  padding: 20px 40px 40px;
-  background: transparent;
-}
-
+/* =========================================
+   مربع الإدخال (Floating Glass Input)
+========================================= */
+.chat-input-container { padding: 10px 50px 40px; background: transparent; }
 .chat-form {
-  display: flex;
-  background: white;
-  border-radius: 20px;
-  padding: 10px 16px;
-  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
-  border: 1px solid #E2E8F0;
-  align-items: center;
-  transition: all 0.3s ease;
+  display: flex; background: rgba(15, 23, 42, 0.5); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 30px; padding: 6px 6px 6px 20px;
+  align-items: center; transition: all 0.3s ease; box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
-
-.chat-form:focus-within {
-  border-color: #10B981;
-  box-shadow: 0 10px 30px -5px rgba(16, 185, 129, 0.15);
-}
+.chat-form:focus-within { border-color: rgba(16, 185, 129, 0.5); box-shadow: 0 15px 35px rgba(16, 185, 129, 0.2); background: rgba(15, 23, 42, 0.7); }
 
 .chat-form input {
-  flex: 1;
-  border: none;
-  padding: 16px;
-  font-size: 16px;
-  outline: none;
-  font-family: inherit;
-  background: transparent;
-  color: #1E293B;
+  flex: 1; border: none; background: transparent; color: white; font-size: 16px; outline: none; font-family: inherit; padding: 10px;
 }
-
-.chat-form input::placeholder {
-  color: #94A3B8;
-}
+.chat-form input::placeholder { color: #94A3B8; }
 
 .chat-form button {
-  background: #10B981;
-  color: white;
-  border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: 0.3s;
+  background: linear-gradient(135deg, #10B981, #059669); color: white; border: none;
+  width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
 }
+.chat-form button:hover { transform: scale(1.08) rotate(-10deg); background: linear-gradient(135deg, #34D399, #10B981); }
 
-.chat-form button:hover {
-  background: #059669;
-  transform: scale(1.05);
-}
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); } 70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); } 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); } }
 
-/* Loading Animation */
-.typing-indicator {
-  display: flex;
-  gap: 5px;
-  padding: 12px 0;
-}
-
-.typing-indicator span {
-  width: 8px;
-  height: 8px;
-  background: #10B981;
-  border-radius: 50%;
-  animation: bounce 1.4s infinite ease-in-out both;
-}
-
+/* تأثير التحميل */
+.typing-indicator { display: flex; gap: 5px; padding: 12px 0; }
+.typing-indicator span { width: 8px; height: 8px; background: #10B981; border-radius: 50%; animation: bounce 1.4s infinite ease-in-out both; }
 .typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
 .typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
-
-@keyframes bounce {
-  0%, 80%, 100% { transform: scale(0); }
-  40% { transform: scale(1); }
-}
+@keyframes bounce { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
