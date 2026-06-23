@@ -3,7 +3,6 @@ const userInput = document.getElementById("userInput");
 const chatBox = document.getElementById("chatBox");
 
 const API_URL = "https://global-scholarships-ai-chatbot.onrender.com/chat";
-
 // دالة الإرسال (تأكدي أن الـ fetch تبدأ برابط الـ API_URL)
 async function sendMessage(message) {
     const response = await fetch(API_URL, {
