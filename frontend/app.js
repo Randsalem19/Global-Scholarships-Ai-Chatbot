@@ -2,11 +2,17 @@ const chatForm = document.getElementById("chatForm");
 const userInput = document.getElementById("userInput");
 const chatBox = document.getElementById("chatBox");
 
-// إذا قمت برفع الخلفية على Render، ضع الرابط هنا. حالياً هو يعمل على جهازك.
-const API_URL = "http://127.0.0.1:8000/chat";
+const API_URL = "https://global-scholarships-ai-chatbot.onrender.com/chat";
 
-function isArabic(text) {
-  return /[\u0600-\u06FF]/.test(text);
+// دالة الإرسال (تأكدي أن الـ fetch تبدأ برابط الـ API_URL)
+async function sendMessage(message) {
+    const response = await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: message })
+    });
+    const data = await response.json();
+    return data.reply;
 }
 
 function formatResponse(text) {
